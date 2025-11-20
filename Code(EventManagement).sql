@@ -7,7 +7,7 @@ CREATE TABLE Management (
     share_percent DECIMAL(5,2) DEFAULT 0.00
 );
 
--- Insert your management team members (example: 3 people)
+
 INSERT INTO Management (name, role, email, phone, share_percent) VALUES
 ('Rupa', 'Co-Founder & CEO', 'rupa@eventpro.com', '01710101010', 33.33),
 ('Prethela', 'Co-Founder & Operations Head', 'pre@eventpro.com', '01820202020', 33.33),
@@ -381,5 +381,6 @@ FROM Event e
 JOIN Customer c ON e.customer_id = c.customer_id
 JOIN Package p ON e.package_id = p.package_id
 ORDER BY e.event_date;
+
 
 
